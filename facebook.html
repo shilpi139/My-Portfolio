@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jquery Website</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="facebook.css">
+	</head>
+	<body>
+		<nav class="navbar bg-primary navbar-fixed-top">  
+	        <div class="navbar-header">
+	          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+		            <span class="sr-only">Toggle</span>
+		            <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+	          </button>
+	          <a href="/" class="navbar-brand logo"></a>
+	      	</div>
+	      	<div class="collapse navbar-collapse" id="navbar-collapse">
+	      		<a class="navbar-brand" href="#">
+			    	<img src="bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+			 	</a>
+		        <form class="navbar-form navbar-left" action="#" style="padding-top: 6px;">
+		            <div class="input-group input-group-sm searchForm">
+		              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+		              <div class="input-group-btn">
+		                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+		              </div>
+		            </div>
+		        </form>
+		        <ul class="nav navbar-nav">
+		          <li>
+	                <a style="color: white;" style="top: -6px;">
+				    	<img id="profilePic" src="" width="30" height="30" alt="">&nbsp;&nbsp;<strong><span id="navBarUserName"</span></strong>
+				 	</a>
+	              </li>
+	              <li>
+	                <a id="profilePage" style="color: white;top: 4px;" href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
+	              </li>
+	              <li>
+	                <a id="feedPage" style="color: white;top: 4px;" href="#" role="button"><i class="glyphicon glyphicon-th-list"></i> Feed</a>
+	              </li>
+	              <li>
+	                <a style="color: white;top: 4px;" href="#" role="button"><i class="glyphicon glyphicon glyphicon-user"></i> Friends</a>
+	              </li>
+	            </ul>
+	            <ul class="nav navbar-nav navbar-right">
+	              <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
+	                <ul class="dropdown-menu">
+	                  <li><a href="">More</a></li>
+	                  <li><a href="">More</a></li>
+	                  <li><a href="">More</a></li>
+	                  <li><a href="">More</a></li>
+	                  <li><a href="">More</a></li>
+	                </ul>
+	              </li>
+	            </ul>
+	      	</div>
+	    </nav>
+	    <br/>
+	    <br/>
+	    <br/>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="profile-img">
+						<img class="img-responsive img-fluid" style="width: 100%;height: 440px;" id="coverPhoto" src="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<div class="well"> 
+					   <center>
+				       		<img class="img-responsive thumbnail" id="picture" src="" />
+				       </center>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+					<div class="well"> 
+				       <form class="form-horizontal" role="form">
+				        <h4>Add Status</h4>
+				        <div class="form-group" style="padding:14px;">
+				          <textarea class="form-control" placeholder="Add your status"></textarea>
+				        </div>
+				        <button class="btn btn-primary pull-right" type="button" data-toggle="modal" data-target="#myModal">Post</button>
+				        <ul class="list-inline">
+					        <li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
+					        <li><a href=""><i class="glyphicon glyphicon-user"></i></a></li>
+					        <li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li>
+					        <li><a href=""><i class="glyphicon glyphicon glyphicon-calendar"></i></a></li>
+					        <li><a href=""><i class=""></i></a></li>
+				        </ul>
+				      </form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Posting a comment....</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Your comment has been posted to your feed.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+		<br/>
+		<div class="profileSection">
+			<div class="container">
+				<div class="row">
+			        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navigation-tab-container">
+			            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navigation-tab-menu">
+			              <div class="list-group">
+			                <a href="#" class="list-group-item active text-center">
+			                  <h4 class="glyphicon glyphicon glyphicon-book"></h4><br/>Basic Details
+			                </a>
+			                <a href="#" class="list-group-item text-center">
+			                  <h4 class="glyphicon glyphicon glyphicon-briefcase"></h4><br/>Work
+			                </a>
+			                <a href="#" class="list-group-item text-center">
+			                  <h4 class="glyphicon glyphicon-user"></h4><br/>Family
+			                </a>
+			              </div>
+			            </div>
+			            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 navigation-tab">
+			                <!-- detail section -->
+			                <div class="navigation-tab-content active">
+			                	<h4><strong>Name :</strong> <span id="name"></span></h4>
+			                	<h4><strong>Email Address :</strong> <span id="email"></span></h4>
+			                	<h4><strong>Gender :</strong> <span id="gender"></span></h4>
+			                	<h4><strong>Relationship Status :</strong> <span id="relationship_status"></span></h4>
+			                	<h4><strong>Date of Birth :</strong> <span id="birthday"></span></h4>
+			                	<h4><strong>Languages :</strong> <span id="languages"></span></h4>
+			                	<h4><strong>Hometown :</strong> <span id="hometown"></span></h4>
+			                </div>
+			                <!-- work and education section -->
+			                <div class="navigation-tab-content">
+			                	<div class="list-group">
+			                		<h4><u><strong>WORK</strong></u>&nbsp;&nbsp;(Past)</h4>
+			                		<h4><em><strong>Company Name:</strong></em> <span id="companyName"></span></h4>
+			                		<h4><em><strong>Position:</strong></em> <span id="position"></span></h4>
+			                		<h4><em><strong>Location:</strong></em><span id="location"></span></h4>
+			                	</div>
+			                </div>
+			                <!-- Family search -->
+			                <div class="navigation-tab-content">
+			                    <h4><em><strong>Name:</strong></em> <span id="personName"></span></h4>
+			                	<h4><em><strong>Relationship:</strong></em><span id="relationship"></span></h4>
+			                </div>
+			            </div>
+			        </div>
+			  	</div>
+			</div>
+		</div>
+		<br/>
+		<div class="feedBlockUi" id="first"></div>
+	    <div class="feedBlockMsg" id="second"><h3>Please wait....</h3></div>
+		<section class="feed">
+			<div class="container" id="feedContainer">
+				<!-- The whole data inside it is being appended from js -->
+			</div>
+		</section>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="facebook.js"></script>
+	</body>
+</html>
